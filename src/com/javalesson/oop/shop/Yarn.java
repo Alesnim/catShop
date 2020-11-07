@@ -5,6 +5,7 @@ public class Yarn {
     int size;
     String color;
     int price;
+    String name;
 
     public Yarn(boolean wool) {
         this.wool = wool;
@@ -23,6 +24,11 @@ public class Yarn {
     public Yarn(boolean wool, int size, String color, int price) {
         this(wool, size, color);
         this.price = price;
+    }
+
+    public Yarn(boolean wool, int size, String color, int price, String name) {
+        this(wool, size, color, price);
+        this.name = name;
     }
 
     public String ride() {
